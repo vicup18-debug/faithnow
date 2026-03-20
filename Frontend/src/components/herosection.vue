@@ -63,7 +63,7 @@ const navigateAndClose = (event: 'nav-sermons' | 'nav-visit' | 'nav-events' | 'o
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 pt-10 pb-20 md:pt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[85vh]">
       <div class="relative z-20 order-2 md:order-1 text-center md:text-left">
-        <h1 class="text-6xl md:text-7xl font-black tracking-tight leading-none mb-6 text-gray-900">
+        <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-none mb-6 text-gray-900 mt-4 md:mt-0">
           Faith for <br />
           <span class="relative inline-block">
             a new
@@ -80,15 +80,15 @@ const navigateAndClose = (event: 'nav-sermons' | 'nav-visit' | 'nav-events' | 'o
           </p>
         </div>
         <div class="relative flex flex-col md:flex-row items-center gap-6 mt-8">
-          <button @click="$emit('nav-visit')" class="px-10 py-4 bg-[#FCD34D] hover:bg-yellow-400 text-gray-900 font-bold rounded-2xl shadow-lg shadow-yellow-200 transition transform hover:-translate-y-1">Start Learning</button>
+          <button @click="$emit('nav-visit')" class="w-full md:w-auto px-10 py-4 bg-[#FCD34D] hover:bg-yellow-400 text-gray-900 font-bold rounded-2xl shadow-lg shadow-yellow-200 transition transform hover:-translate-y-1">Start Learning</button>
           <button @click="$emit('nav-sermons')" class="flex items-center gap-2 font-bold text-gray-700 hover:text-purple-600 transition">Explore Library <span>⤵</span></button>
         </div>
       </div>
-      <div class="relative z-10 order-1 md:order-2 h-[500px] flex items-center justify-center">
-        <div class="absolute top-10 right-0 w-[400px] h-[400px] bg-[#8B5CF6] rounded-[4rem] transform rotate-6 mix-blend-multiply opacity-90 animate-blob"></div>
-        <div class="absolute top-0 left-10 w-32 h-32 bg-[#FCD34D] rounded-full mix-blend-multiply opacity-90 animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-10 right-10 w-24 h-24 bg-pink-300 rounded-[2rem] mix-blend-multiply opacity-90 animate-blob animation-delay-4000"></div>
-        <div class="relative w-[380px] h-[480px] overflow-hidden rounded-[3rem] shadow-2xl border-4 border-white transform -rotate-2 hover:rotate-0 transition duration-500">
+      <div class="relative z-10 order-1 md:order-2 h-[400px] md:h-[500px] w-full flex items-center justify-center">
+        <div class="absolute top-10 -right-4 md:right-0 w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-[#8B5CF6] rounded-[4rem] transform rotate-6 mix-blend-multiply opacity-90 animate-blob"></div>
+        <div class="absolute top-0 left-0 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-[#FCD34D] rounded-full mix-blend-multiply opacity-90 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-4 right-4 md:bottom-10 md:right-10 w-20 h-20 md:w-24 md:h-24 bg-pink-300 rounded-[2rem] mix-blend-multiply opacity-90 animate-blob animation-delay-4000"></div>
+        <div class="relative w-[85%] max-w-[380px] h-[350px] md:h-[480px] overflow-hidden rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-4 border-white transform -rotate-2 hover:rotate-0 transition duration-500">
           <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2069&auto=format&fit=crop" alt="Happy Believer" class="w-full h-full object-cover" />
         </div>
       </div>
