@@ -124,7 +124,7 @@ const navigateAndClose = (event: 'nav-sermons' | 'nav-visit' | 'nav-events' | 'o
     <div class="bg-white py-24 relative">
        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
          <div class="relative">
-           <img src="/africa-map.png" class="w-full object-contain rounded-3xl opacity-80" />
+           <img src="/africa-map.jpeg" class="w-full object-contain rounded-3xl opacity-80" />
            <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
          </div>
          <div>
